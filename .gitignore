@@ -1,0 +1,24 @@
+# Ignore folder content
+intermediate_saved_results/*
+!intermediate_saved_results/.gitkeep
+
+plot_nb_data_output/*
+!plot_nb_data_output/.gitkeep 
+
+# Ignore everything under completed_runs (recursively)
+completed_runs/**
+
+# Allow directories (so negations below can match inside them)
+!completed_runs/**/
+
+# Keep any .gitkeep file at any depth
+!completed_runs/**/.gitkeep
+
+.vscode
+
+__pycache__
+
+# Ignore folder content
+scripts/logs/*
+
+scripts/plot_a_run_data/*
